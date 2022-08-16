@@ -8,7 +8,8 @@
             Console.WriteLine("Enter 1 to check whether employee present or not");
             Console.WriteLine("Enter 2 to check the daily wage of an employee");
             Console.WriteLine("Enter 3 to check the employemet type of an employee");
-            Console.WriteLine("Enter 4 to check dailywage using ");
+            Console.WriteLine("Enter 4 to check dailywage using Switch ");
+            Console.WriteLine("Enter 5 to check monthly wage using switch ");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch(ans)
             {
@@ -27,6 +28,10 @@
                 case 4:
                     EmployeeSalaryUsingSwitch employeeSalaryUsingSwitch = new EmployeeSalaryUsingSwitch();
                     employeeSalaryUsingSwitch.EmployeeSwitch();
+                    break;
+                case 5:
+                    WageForMonth empageForMonth = new WageForMonth();   
+                    empageForMonth.SalaryPerMonth();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
