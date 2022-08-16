@@ -7,6 +7,7 @@
             Console.WriteLine("Welcome to employee wage computation Program");
             Console.WriteLine("Enter 1 to check whether employee present or not");
             Console.WriteLine("Enter 2 to check the daily wage of an employee");
+            Console.WriteLine("Enter 3 to check the employemet type of an employee");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch(ans)
             {
@@ -17,6 +18,10 @@
                 case 2:
                     DailyWage empWage = new DailyWage();
                     empWage.DailyWageCalculation();
+                    break;
+                case 3:
+                    EmployeePartTime employeePartTime = new EmployeePartTime();
+                    employeePartTime.EmployeeType();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
