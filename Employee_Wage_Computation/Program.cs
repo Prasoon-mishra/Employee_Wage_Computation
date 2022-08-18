@@ -11,6 +11,7 @@
             Console.WriteLine("Enter 4 to check dailywage using Switch ");
             Console.WriteLine("Enter 5 to check monthly wage using switch ");
             Console.WriteLine("Enter 6 to check monthly wage  and a certain condition using switch ");
+            Console.WriteLine("Enter 7 to check the salary for multiple companies");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch(ans)
             {
@@ -37,6 +38,10 @@
                 case 6:
                     WageUC6 wageUC6 = new WageUC6();
                     wageUC6.SalaryForParticularCondition();
+                    break;
+                case 7:
+                    WageForMultipleCompanies wageForMultipleCompanies = new WageForMultipleCompanies();
+                    wageForMultipleCompanies.MultipleCompanies("Cognizant", 200, 20, 100);
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
