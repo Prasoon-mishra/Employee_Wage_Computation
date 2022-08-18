@@ -10,6 +10,7 @@
             Console.WriteLine("Enter 3 to check the employemet type of an employee");
             Console.WriteLine("Enter 4 to check dailywage using Switch ");
             Console.WriteLine("Enter 5 to check monthly wage using switch ");
+            Console.WriteLine("Enter 6 to check monthly wage  and a certain condition using switch ");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch(ans)
             {
@@ -32,6 +33,10 @@
                 case 5:
                     WageForMonth empageForMonth = new WageForMonth();   
                     empageForMonth.SalaryPerMonth();
+                    break;
+                case 6:
+                    WageUC6 wageUC6 = new WageUC6();
+                    wageUC6.SalaryForParticularCondition();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
